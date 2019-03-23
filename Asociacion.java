@@ -1,12 +1,9 @@
-
+import java.util.Map;
 /**
  * @author: Maria Isabel Ortiz 18176
  * @author: Diego Estrada 18540
- * Clase Asociacion 
+ * Main
  */
-
-import java.util.Map;
-
 public class Asociacion<K,V> implements Map.Entry<K,V>{
 
     protected K key;
@@ -18,25 +15,27 @@ public class Asociacion<K,V> implements Map.Entry<K,V>{
         this.valor = valor;
     }
 
-    //
+    //Se crea a partir de una llave proporcionada
     public Asociacion(K key)
     {
         this(key, null);
     }
 
+    //obtiene el valor
     @Override
     public V getValue()
     {
         return valor;
     }
 
+    //obtiene la llave
     @Override
     public K getKey()
     {
         return key;
     }
 
-
+    //Realiza un set para un nuevo valor de un Objeto
     @Override
     public V setValue(V nuevoValor) {
         V oldV = valor;
@@ -44,6 +43,7 @@ public class Asociacion<K,V> implements Map.Entry<K,V>{
         return oldV;
     }
 
+    //Función que sirve para comparar objetos
     @Override
     public boolean equals (Object objeto) {
         Asociacion objetoNuevo = (Asociacion) objeto;
