@@ -1,3 +1,10 @@
+
+/**
+ * @author: Maria Isabel Ortiz 18176
+ * @author: Diego Estrada 18540
+ * Clase Asociacion 
+ */
+
 import java.util.Map;
 
 public class Asociacion<K,V> implements Map.Entry<K,V>{
