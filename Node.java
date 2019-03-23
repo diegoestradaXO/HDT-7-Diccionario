@@ -1,3 +1,10 @@
+
+/**
+ * @author: Maria Isabel Ortiz 18176
+ * @author: Diego Estrada 18540
+ * Clase Node
+ */
+
 public class Node<E> {
 
     private Asociacion<String, String> valor;
